@@ -21,9 +21,7 @@ import org.springframework.stereotype.Component;
 import static com.alibaba.rocketmq.task.AlertMonitorTask.getProperty;
 
 /**
- * Created by zwj on 2016/1/28.
  * INFO:消费者 TPS 统计
- *
  * @Scheduled(cron = "1 * *  * * ? ") 表示每  1 分钟执行一次
  */
 @Component

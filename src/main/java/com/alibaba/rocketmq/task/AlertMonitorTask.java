@@ -34,9 +34,6 @@ import java.util.concurrent.atomic.AtomicLong;
 
 import static com.alibaba.rocketmq.task.CommonTpsTask.topics;
 
-/**
- * Created by gantang on 2016/11/16.
- */
 @Slf4j
 @Component
 public class AlertMonitorTask implements InitializingBean {

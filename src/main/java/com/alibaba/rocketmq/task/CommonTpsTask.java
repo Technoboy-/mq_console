@@ -13,11 +13,8 @@ import java.util.List;
 
 
 /**
- * Created by zwj on 2016/1/28.
  * INFO:这里的方法将 每 5 分钟抓取 Topic、Group，这里时间定义长点
  */
-
-
 @Slf4j
 @Component
 public class CommonTpsTask {
