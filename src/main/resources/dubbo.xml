@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd" >
+    <dubbo:provider filter="datFilter" />
+    <dubbo:consumer filter="datFilter" />
+       <!-- 短信服务 -->
+    <dubbo:reference id="dingService" interface="com.dfire.sm.service.IDingDingService" version="1.0.0" />
+    <dubbo:reference id="msService" interface="com.dfire.sm.service.IMsService" version="1.0.0" />
+
+</beans>
